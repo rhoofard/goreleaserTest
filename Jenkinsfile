@@ -15,7 +15,6 @@ pipeline {
       steps {
 	sh 'git config --global user.name "Ryan Hoofard"'
 	sh 'git config --global user.email "rhoofard2000@gmail.com"'
-	sh 'git tag -a v0.1.8 -m "test"'
 	sh 'goreleaser release'
       }
     }
